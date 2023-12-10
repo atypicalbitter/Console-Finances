@@ -86,15 +86,22 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
-var totalMonths = finances.length; // The total number of months included in the dataset. 
-  var netTotal = // The net total amount of Profit / Losses over the entire period.
-    var averageChange =   // Need a variable to track the average change
-      var greatestIncrease =  // Need a variable for the greatest increase
-        var greatestDecrease =   // Need a variable for the greatest decrease
+var totalMonths = finances.length; 
+console.log('Total number of months is' + ' ' + finances.length);// The total number of months included in the dataset. 
+
+  var netTotal = 0; // The net total amount of Profit / Losses over the entire period.
+    var averageChange = 0;   // Need a variable to track the average change
+      var greatestIncrease = 0; // Need a variable for the greatest increase
+        var greatestDecrease = 0;   // Need a variable for the greatest decrease
+          var profitLoss = 0;  // Need a variable for Profits/Losses
+          for (let i = 0; i < finances.length; i++) {
+            let netTotal = finances[0][1];
+            netTotal = netTotal + finances [i] [1];
+          }
+          console.log(finances[0]);
 
 
 
-  // Need a variable for Profits/Losses
   // Need to be able to compare the data for the loop that we're on to the data from the previous loop
     // Need variables for current & previous once we start the loop
     // Need an if statement to make sure we're on at least month 2 (array index 1) before starting to figure profits & losses
