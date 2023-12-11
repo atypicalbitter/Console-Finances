@@ -87,7 +87,6 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 var totalMonths = finances.length; 
-console.log('Total number of months is' + ' ' + finances.length);// The total number of months included in the dataset. 
 
 var netTotal = 0; 
 for (var i = 0; i < finances.length; i++) {
@@ -96,18 +95,15 @@ for (var i = 0; i < finances.length; i++) {
 
   netTotal += profitLoss;
 
-  console.log('The Net total is' + ' ' + netTotal);
-}
+var averageChange = 0; 
 
-// The net total amount of Profit / Losses over the entire period.
-var averageChange = 0;   // Need a variable to track the average change
-var greatestIncrease = 0 // Need a variable for the greatest increase
-  var greatestDecrease = 0  // Need a variable for the greatest decrease
-    var profitLoss = 0;  // Need a variable for Profits/Losses
+var greatestIncrease = { date: ' ', amount: -Infinity }; 
+  var greatestDecrease = { date: ' ', amount: Infinity };
+    var profitLoss = 0; 
 
 if (i > 0) {
-  var change = profitLoss - finances[i - 1] [i]
-  totalChange = change;
+  var change = profitLoss - finances[i - 1] [1]
+  totalChange += change;
 
 if (change > greatestIncrease.amount) { 
   greatestIncrease.date = date;
@@ -120,42 +116,11 @@ greatestDecrease.amount = change;
   }
 }
 
+var averageChange = 
+averageChange / (totalMonths - 1);
 
 
-
-
-
-          
-        
-
-
-  // Need to be able to compare the data for the loop that we're on to the data from the previous loop
-    // Need variables for current & previous once we start the loop
-    // Need an if statement to make sure we're on at least month 2 (array index 1) before starting to figure profits & losses
-
-// The average of the changes in Profit / Losses over the entire period.
-
-  // That will make use of the current & previous variables we set up before
-// You will need to track what the total change in Profit / Losses are from month to month and then find the average.
-// (Total / (Number of months - 1))
-
-// The greatest increase in Profit / Losses(date and amount) over the entire period.
-
-  // On each iteration, compare the current change in profits/losses to what's currently stored
-  // If the change is more, replace what's currently stored in the variable
-
-// The greatest decrease in Profit / Losses(date and amount) over the entire period.
-
-  // On each iteration, compare the current change in profits/losses to what's currently stored
-  // If the loss is greater, replace what's currently stored in the variable
-
-// variables:
-// total number of months
-// rolling total of profits
-// greatest increase (month & amt)
-// greatest loss (month & amt)
-// average of the changes
-
-// variables declared inside the loop:
-// current data point
-// previous data point
+console.log('Total number of months is' + ' ' + finances.length);
+console.log('The Net total is' + ' ' + netTotal);
+}
+console.log(averageChange);
