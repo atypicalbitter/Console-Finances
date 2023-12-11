@@ -87,27 +87,26 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 var totalMonths = finances.length; 
-
 var netTotal = 0; 
-for (var i = 0; i < finances.length; i++) {
-  var date = finances[i][0];
-  var profitLoss = finances [i][1];
-
-  netTotal += profitLoss;
-
-var averageChange = 0; 
-
+var totalChange = 0; 
 var greatestIncrease = { date: ' ', amount: -Infinity }; 
   var greatestDecrease = { date: ' ', amount: Infinity };
-    var profitLoss = 0; 
+  var profitLoss = 0; 
+
+    for (var i = 0; i < finances.length; i++) {
+      var date = finances[i][0];
+      var profitLoss = finances [i][1];
+
+      netTotal += profitLoss;
 
 if (i > 0) {
-  var change = profitLoss - finances[i - 1] [1]
+  var change = profitLoss - finances[i - 1][1]
   totalChange += change;
 
 if (change > greatestIncrease.amount) { 
   greatestIncrease.date = date;
 greatestIncrease.amount = change;
+}
 
 if (change < greatestDecrease.amount) {
   greatestDecrease.date = date;
@@ -117,10 +116,9 @@ greatestDecrease.amount = change;
 }
 
 var averageChange = 
-averageChange / (totalMonths - 1);
+averageChange = totalChange / (totalMonths - 1);
 
 
 console.log('Total number of months is' + ' ' + finances.length);
-console.log('The Net total is' + ' ' + netTotal);
-}
-console.log(averageChange);
+console.log('The Net total is' + ' ' + '£' + netTotal);
+console.log('The average change is' + ' ' + averageChange);
