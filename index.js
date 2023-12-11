@@ -122,3 +122,5 @@ averageChange = totalChange / (totalMonths - 1);
 console.log('Total number of months is' + ' ' + finances.length);
 console.log('The Net total is' + ' ' + '£' + netTotal);
 console.log('The average change is' + ' ' + averageChange);
+console.log('The greatest increase was' + ' ' + greatestIncrease.date + ' ' + 'by' + ' ' + '£' + greatestIncrease.amount);
+console.log('The greatest decreae was' + ' ' + greatestDecrease.date + ' ' + 'by' + ' ' + '£' + greatestDecrease.amount);
