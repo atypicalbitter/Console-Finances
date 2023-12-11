@@ -99,11 +99,17 @@ for (var i = 0; i < finances.length; i++) {
   console.log('The Net total is' + ' ' + netTotal);
 }
 
+// The net total amount of Profit / Losses over the entire period.
+var averageChange = 0;   // Need a variable to track the average change
+var greatestIncrease = 0 // Need a variable for the greatest increase
+  var greatestDecrease = 0  // Need a variable for the greatest decrease
+    var profitLoss = 0;  // Need a variable for Profits/Losses
+
 if (i > 0) {
-  var chnage = profitLoss - finances[i - 1] [i]
+  var change = profitLoss - finances[i - 1] [i]
   totalChange = change;
 
-if (chnage > greatestIncrease.amount) { 
+if (change > greatestIncrease.amount) { 
   greatestIncrease.date = date;
 greatestIncrease.amount = change;
 
@@ -114,11 +120,7 @@ greatestDecrease.amount = change;
   }
 }
 
-// The net total amount of Profit / Losses over the entire period.
-    var averageChange = 0;   // Need a variable to track the average change
-      var greatestIncrease = 0 // Need a variable for the greatest increase
-        var greatestDecrease = 0  // Need a variable for the greatest decrease
-          var profitLoss = 0;  // Need a variable for Profits/Losses
+
 
 
 
