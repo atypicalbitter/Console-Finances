@@ -99,7 +99,20 @@ for (var i = 0; i < finances.length; i++) {
   console.log('The Net total is' + ' ' + netTotal);
 }
 
+if (i > 0) {
+  var chnage = profitLoss - finances[i - 1] [i]
+  totalChange = change;
 
+if (chnage > greatestIncrease.amount) { 
+  greatestIncrease.date = date;
+greatestIncrease.amount = change;
+
+if (change < greatestDecrease.amount) {
+  greatestDecrease.date = date;
+greatestDecrease.amount = change;
+    }
+  }
+}
 
 // The net total amount of Profit / Losses over the entire period.
     var averageChange = 0;   // Need a variable to track the average change
