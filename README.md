@@ -4,12 +4,11 @@
 
 ## Description
 
-Welcome to my Front-End Web Development Portfolio, made with Bootstrap! This portfolio showcases my skills, talents, and various projects, providing a glimpse into my capabilities as a web developer.
+Within this challenge, I was given a  real-world situation where I was tasked with creating code for analyzing the financial records of a company. 
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Installation](#installation)
 - [About](#about)
 - [License](#license)
 - [Deployed Link](#deployed-link)
@@ -34,9 +33,6 @@ My goal was to calculate what is stated below -
 
 This code essentially goes through each month in the financial dataset, I have instructed it to perform calculations such as net total, average change, and identifies the months with the greatest increase and decrease in profit/loss. 
 
-## Installation 
-
-N/A
 
 ## About
 
