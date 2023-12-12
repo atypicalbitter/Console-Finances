@@ -88,7 +88,7 @@ SOFTWARE.
 
 
 ## Deployed Link
- * [See Deployed Link Here](https://github.com/atypicalbitter)
+ * [See Deployed Link Here](https://atypicalbitter.github.io/Console-Finances/)
 
 ## Author
  * [Matt Dudman](https://github.com/atypicalbitter)
