@@ -59,7 +59,7 @@ I used "toLocaleString('en-GB')" to format the numbers accordingly.
 
 This is what was shown in the console at the end - 
 
-![Alt text](<Assets/Screenshot 2023-12-12 at 18.29.27.png>)
+![Alt text](<Assets/Screenshot 2023-12-12 at 21.31.41.png>)
 
 
 ## License
